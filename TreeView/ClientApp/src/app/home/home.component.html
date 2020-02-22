@@ -1,0 +1,16 @@
+<h3>Tree View</h3>
+<hr />
+<div class="project-tree-container">
+  <div class="row">
+    <div class="col-md-6">
+      <p-tree #projectTree [value]="projectTreeData" [filter]="true" [loading]="isProjectTreeLoading" selectionMode="single" (onNodeExpand)="nodeExpand($event.node)"
+              (onNodeCollapse)="nodeCollapse($event.node)" (onNodeSelect)="expandSelectedNode($event.node)" [(selection)]="selectedNode">
+        <ng-template let-node pTemplate="default">
+          <span class="font-14px" [class.link-style]="node.children == undefined" [class.selected-measure-link-style]="selectedMeasure == node" (click)="onMeasureSelect(node)">
+            {{node.label}}
+          </span>
+        </ng-template>
+      </p-tree>
+    </div>
+  </div>
+</div>

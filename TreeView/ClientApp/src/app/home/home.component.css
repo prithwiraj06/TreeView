@@ -1,0 +1,47 @@
+#project-tree-container .ui-tree {
+  width: 100%;
+}
+
+#project-tree-container .ui-tree .ui-tree-container {
+  overflow-y: auto;
+  height: 500px;
+}
+
+ #project-tree-container .ui-tree .ui-tree-container .ui-treenode {
+   display: grid;
+ }
+
+#project-tree-container .ui-treenode .ui-treenode-content.ui-treenode-selectable .ui-treenode-label:not(.ui-state-highlight):hover {
+  background-color: inherit;
+}
+
+#project-tree-container .ui-tree .ui-tree-container .ui-treenode .ui-treenode-content .ui-treenode-label.ui-state-highlight {
+  background-color: inherit;
+  color: inherit;
+}
+
+#project-tree-container .ui-tree .ui-tree-container .ui-treenode .ui-treenode-content {
+  outline: none;
+}
+
+#project-tree-container .ui-tree .ui-tree-filter-container .ui-tree-filter-icon {
+  color: blue;
+}
+
+#project-tree-container .link-style {
+  color: blue;
+  cursor: pointer;
+}
+
+#project-tree-container .selected-measure-link-style {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#project-tree-container li.highlight-node > div {
+  background-color: lightsteelblue;
+  border: 1px solid black;
+  outline: none;
+}
